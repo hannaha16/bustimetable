@@ -1,0 +1,9 @@
+﻿@model BusWireMVC.Models.BusArrival 
+
+<p>@Model.LineName Going to towards @Model.DestinationName</p>
+<p>Time unit arrival:
+    @(Model.TimeToStation / 60) Minutes
+    @(Model.TimeToStation % 60) Seconds
+</p>
+<p>Number plate: @Model.VehicleId</p> 
+

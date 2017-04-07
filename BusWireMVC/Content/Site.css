@@ -1,0 +1,139 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+input{
+    color: black;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+footer {
+    background-color: white;
+    padding-bottom: 60px;
+}
+
+a {
+    color: #0019a8;
+}
+
+a:hover {
+    color: #031041;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input[type=text], button {
+    margin: 12px;
+    padding: 8px 20px 8px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 120%;
+}
+
+input[type=submit], button {
+    padding: 8px 20px;
+    margin: 8px;
+    font-size: 120%;
+    background-color: white;
+    color: #CC3333;
+    text-align: center;
+    border-radius: 8px;
+}
+
+input[type=submit]:hover, button:hover {
+    background-color: #CC3333;
+    color: white;    
+}
+
+fieldset {
+    text-align: right;
+}
+
+.launch-search {
+    text-align: center;
+}
+
+.jumbotron, .busstop {
+    background-color: deeppink;
+    color: white;    
+    border-radius: 5px;
+}
+
+.busname {
+    background-color: palevioletred;
+}
+.jumbotron {
+    text-align: center;
+    width: max-content;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    display: block;
+}
+
+.loading-image {
+    display: block;
+    margin: auto;
+}
+
+.busstop {
+    margin: 12px auto 12px auto;
+    display: table;
+    padding: 20px;
+    background-color: cadetblue
+    font-size: 150%;
+}
+
+.busstop-name {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #0019a8;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.busstop-table-head {
+    font-weight: bold;
+}
+
+.buserror {
+    background-color: #0019a8;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+td {
+    text-align: center;
+    padding: 20px;
+}

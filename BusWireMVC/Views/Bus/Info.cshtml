@@ -1,0 +1,27 @@
+@model BusWireMVC.ViewModels.BusInfoViewModel
+
+@{
+    ViewBag.Title = "Bus Information";
+
+}@section scripts
+{
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+}
+<h1>Bus Timetable Results</h1>
+
+ @using (Ajax.BeginForm("Results", "Bus", new AjaxOptions
+{
+    HttpMethod = "GET",
+    UpdateTargetId = "resultsdiv",
+    InsertionMode = InsertionMode.Replace
+}))
+{ 
+<fieldset>
+    @Html.TextBox("PostCode")
+    <input type="submit"value="Refresh"/> 
+</fieldset>
+}
+<div id="resultsdiv">
+    @Html.Partial("Results")
+</div>

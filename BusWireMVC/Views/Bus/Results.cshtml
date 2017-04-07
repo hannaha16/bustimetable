@@ -1,0 +1,20 @@
+﻿ @model BusWireMVC.ViewModels.BusInfoViewModel
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <p>There's been an error :(</p>
+}
+else
+{
+    for (int i = 0; i < Model.BusStops.Count; i++)
+    {
+        <div class ="busstop"> 
+    <h2 class="busname">@Model.BusStops[i].CommonName</h2>
+
+        @for (int j = 0; j < Model.BusStops[i].NextArrivals.Count; j++)
+        {
+        @Html.Partial("Arrival", Model.BusStops[i].NextArrivals[j])
+        }
+     </div>
+    }
+}

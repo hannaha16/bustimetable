@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Welcome to BusWire";
+}
+
+<div class="row">
+    <div class="jumbotron">
+        <h1>Bus Wire</h1>
+        <p class="lead">Enter a postcode and hit enter to see bus times for that location.</p>
+        <div class="col-md-12">
+            @using (Html.BeginForm("Info", "Bus", FormMethod.Get))
+            {
+                <fieldset class="launch-search">
+                    @Html.TextBox("postcode")
+
+                    <input type="submit" value="Search" />
+                </fieldset>
+            }
+        </div>
+    </div>
+</div>
